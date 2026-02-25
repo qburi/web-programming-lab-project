@@ -12,3 +12,6 @@
 # ignore .idea folder
 .idea
 /.idea/
+
+# ignore the plan
+the plan.txt
