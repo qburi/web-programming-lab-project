@@ -1,0 +1,23 @@
+body {
+    background-color: #111111;
+    color: white;
+}
+
+.scroller {
+    max-width: 100%;
+    overflow: hidden; /* Hides the scrollbar */
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); /* Fades the edges beautifully */
+}
+
+.scroller-inner {
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+    animation: scroll 20s linear infinite; /* The magic */
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem)); /* Moves it exactly half way, then seamlessly restarts */
+    }
+}
