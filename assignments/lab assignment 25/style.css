@@ -1,0 +1,82 @@
+body {
+    background: #1a1b1f;
+    background: linear-gradient(90deg, rgba(26, 27, 31, 1) 10%, rgba(75, 40, 191, 1) 43%, rgba(43, 43, 33, 1) 100%, rgba(10, 10, 4, 1) 90%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.login-container h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.login-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #03e9f4;
+    box-shadow: 0 0 10px #03e9f4;
+}
+
+a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 14px;
+    align-self: flex-end; /* Aligns link to the right */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #03e9f4;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #03e9f4;
+    color: #111;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #02c1cc;
+    transform: scale(1.02); /* Slight grow effect */
+    box-shadow: 0 0 15px #03e9f4;
+}

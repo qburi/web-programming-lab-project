@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Checkout</h2>
+    <form id="checkoutForm">
+
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone">
+            <small class="error" id="phoneError"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Delivery Address</label>
+            <textarea id="address" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="zip">ZIP/Postal Code</label>
+            <input type="text" id="zip">
+            <small class="error" id="zipError"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="payment">Payment Option</label>
+            <select id="payment">
+                <option value="">-- Select Payment Method --</option>
+                <option value="credit_card">Credit Card</option>
+                <option value="upi">UPI</option>
+                <option value="cod">Cash on Delivery</option>
+            </select>
+            <small class="error" id="paymentError"></small>
+        </div>
+
+        <button type="submit">Complete Purchase</button>
+        <p id="successMessage" style="color: #4caf50; display: none; margin-top: 10px;">Order Placed Successfully!</p>
+    </form>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
