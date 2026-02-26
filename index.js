@@ -2,16 +2,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const track = document.getElementById("assignment-track");
 
     const assignments = [
-        { img: "./images/s1.png", link: "assignment1.html", title: "Assignment 1" },
-        { img: "./images/s2.png", link: "assignment2.html", title: "Assignment 2" },
-        { img: "./images/s3.png", link: "assignment3.html", title: "Assignment 3" },
-        { img: "./images/s4.png", link: "assignment4.html", title: "Assignment 4" },
-        { img: "./images/s5.png", link: "assignment5.html", title: "Assignment 5" },
-        { img: "./images/s6.png", link: "assignment6.html", title: "Assignment 6" },
-        { img: "./images/s7.png", link: "assignment7.html", title: "Assignment 7" },
-        { img: "./images/s8.png", link: "assignment8.html", title: "Assignment 8" },
-        { img: "./images/s9.png", link: "assignment9.html", title: "Assignment 9" },
-        { img: "./images/s10.png", link: "assignment10.html", title: "Assignment 10" }
+        { img: "./images/assignment 23.png", link: "./assignments/lab assignment 23/index.html", title: "Assignment 1" },
+        { img: "./images/assignment 25.png", link: "./assignments/lab assignment 25/index.html", title: "Assignment 2" },
+        { img: "./images/assignment 34.png", link: "./assignments/lab assignment 34/index.html", title: "Assignment 3" },
+        { img: "./images/assignment 40.png", link: "./assignments/lab assignment 40/index.html", title: "Assignment 4" },
+        { img: "./images/assignment .png", link: "./assignments/lab assignment /index.html", title: "Assignment 5" },
+        { img: "./images/assignment .png", link: "./assignments/lab assignment /index.html", title: "Assignment 6" },
+        { img: "./images/assignment .png", link: "./assignments/lab assignment /index.html", title: "Assignment 7" },
+        { img: "./images/assignment .png", link: "./assignments/lab assignment /index.html", title: "Assignment 8" },
+        { img: "./images/assignment .png", link: "./assignments/lab assignment /index.html", title: "Assignment 9" },
+        { img: "./images/assignment .png", link: "./assignments/lab assignment /index.html", title: "Assignment 10" }
     ];
 
     // 1. Dynamically create the HTML for the original 10 cards
