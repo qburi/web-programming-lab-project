@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; /* Makes it look cleaner */
+}
+
+body {
+    background-color: #111111;
+    color: white;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-container {
+    background-color: white;
+    color: black;
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.card-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* makes the mango look not squishy */
+}
+
+.card-content-container {
+    padding: 20px;
+    width: 100%;
+}
+
+.star-rating-container {
+    color: goldenrod;
+    margin: 10px 0;
+}
+
+.review-count {
+    color: #555;
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+.description-container {
+    margin-bottom: 20px;
+    color: #444;
+    line-height: 1.4;
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-container span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.price-container button {
+    background-color: hsl(216, 98%, 52%);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.price-container button:hover {
+    background-color: hsl(216, 98%, 60%);
+}
+
+.price-container button:active {
+    background-color: hsl(216, 98%, 40%);
+}

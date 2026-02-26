@@ -1,0 +1,35 @@
+body {
+    background-color: #111111;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+table {
+    background-color: #111111;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    padding: 15px;
+    border: 2px solid hsla(174, 100%, 26%, 0.8);
+}
+
+tr:nth-child(even) {
+    background-color: #636363;
+}
+
+tr:nth-child(even):hover {
+    background-color: hsl(0, 0%, 29%);
+}
+
+tr:nth-child(odd):hover {
+    background-color: hsl(0, 0%, 1%);
+}
+
+.image {
+    width: 200px;
+    height: 170px;
+}

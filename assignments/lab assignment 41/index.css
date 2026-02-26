@@ -1,0 +1,54 @@
+body {
+    background-color: #111111;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-div {
+    display: flex;
+    padding: 25px 20px;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.error {
+    color: red;
+    height: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: hsl(216, 98%, 52%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: hsl(216, 98%, 60%);
+}
+
+.form-group-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input:focus {
+    background-color: hsla(106, 37%, 56%, 0.44);
+}

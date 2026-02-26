@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Modals</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<h1>Multiple Modals</h1>
+
+<div class="controls">
+    <button onclick="openModal('login-modal')">Open Login</button>
+    <button onclick="openModal('signup-modal')">Open Signup</button>
+    <button onclick="openModal('confirm-modal')">Open Confirmation</button>
+</div>
+
+<div id="modal-backdrop"></div>
+
+<div id="login-modal" class="modal" onclick="bringToFront(this)">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <div class="modal-footer">
+        <button>Log In</button>
+    </div>
+</div>
+
+<div id="signup-modal" class="modal" onclick="bringToFront(this)">
+    <h2>Sign Up</h2>
+    <input type="email" placeholder="Email Address">
+    <input type="password" placeholder="Create Password">
+    <div class="modal-footer">
+        <button style="background-color: #28a745;">Register</button>
+    </div>
+</div>
+
+<div id="confirm-modal" class="modal" onclick="bringToFront(this)">
+    <h2>Confirmation</h2>
+    <p>Are you sure you want to proceed with this action?</p>
+    <div class="modal-footer">
+        <button onclick="closeSpecificModal('confirm-modal')" style="background-color: #dc3545;">Yes, Proceed</button>
+        <button onclick="closeSpecificModal('confirm-modal')" style="background-color: #6c757d;">Cancel</button>
+    </div>
+</div>
+
+    <script src="index.js"></script>
+</body>
+</html>
