@@ -8,52 +8,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body class="bg-black">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">StudentHub</a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        About
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-                        <li><a class="dropdown-item" href="./assignments/lab%20assignment%2024%20for%20portfolio%20website/index.html">Portfolio</a></li>
-                        <li><a class="dropdown-item" href="./assignments/lab%20assignment%2012%20for%20course%20pursuing/index.html">Course Pursuing</a></li>
-                        <li><a class="dropdown-item" href="./assignments/lab%20assignment%2015%20for%20leaderboard/index.html">Leaderboard</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="./assignments/lab%20assignment%208%20for%20About%20page">About Page</a></li>
-                    </ul>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="./assignments/lab%20assignment%2010%20for%20contact%20page">Contact</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="./assignments/assignment%209%20for%20Gallery">Gallery</a>
-                </li>
-
-            </ul>
-
-            <div class="d-flex gap-2">
-                <button class="btn btn-outline-info" id="shareBtn" onclick="window.location.href='./assignments/share page/index.html'">Share</button>
-
-                <button class="btn btn-primary" onclick="window.location.href='./assignments/lab assignment 25/index.html'">Login</button>
-            </div>
-        </div>
-    </div>
-</nav>
+<div id="navbar-placeholder" data-basepath="."></div>
 
     <!--
     this part is for the infinite carousel
@@ -63,6 +18,7 @@
     </ul>
 </div>
 
-<script src="index.js"></script>
+    <script src="index.js"></script>
+    <script src="components.js"></script>
 </body>
 </html>

@@ -1,23 +1,26 @@
+/* style.css */
+
 body {
+    /* Bootstrap applies a modern system font stack by default,
+       but you can leave this if you want a strict sans-serif override */
     font-family: sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-section {
+/* Changed from 'section' to a specific class */
+.portfolio-section {
     margin-bottom: 10px;
     text-align: center;
     max-width: 500px;
 }
 
-ul {
+/* Changed from 'ul' to a specific class */
+.tech-stack-list {
     list-style-type: none;
     padding: 0;
 }
 
-li {
+/* Changed from 'li' to a specific class */
+.tech-stack-item {
     display: inline-block;
     background: #e0e7ff;
     color: #1e3a8a;
@@ -26,4 +29,11 @@ li {
     font-size: 0.85rem;
     margin-right: 5px;
     margin-bottom: 5px;
+}
+
+.main-div {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

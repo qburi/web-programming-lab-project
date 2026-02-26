@@ -2,6 +2,8 @@ body {
     background: #1a1b1f;
     background: linear-gradient(90deg, rgba(26, 27, 31, 1) 10%, rgba(75, 40, 191, 1) 43%, rgba(43, 43, 33, 1) 100%, rgba(10, 10, 4, 1) 90%);
     color: white;
+}
+.main-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
