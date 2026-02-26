@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
         { img: "./images/assignment 25.png", link: "./assignments/lab assignment 25/index.html", title: "Assignment 2" },
         { img: "./images/assignment 34.png", link: "./assignments/lab assignment 34/index.html", title: "Assignment 3" },
         { img: "./images/assignment 40.png", link: "./assignments/lab assignment 40/index.html", title: "Assignment 4" },
-        { img: "./images/assignment .png", link: "./assignments/lab assignment /index.html", title: "Assignment 5" },
-        { img: "./images/assignment .png", link: "./assignments/lab assignment /index.html", title: "Assignment 6" },
-        { img: "./images/assignment .png", link: "./assignments/lab assignment /index.html", title: "Assignment 7" },
-        { img: "./images/assignment .png", link: "./assignments/lab assignment /index.html", title: "Assignment 8" },
-        { img: "./images/assignment .png", link: "./assignments/lab assignment /index.html", title: "Assignment 9" },
-        { img: "./images/assignment .png", link: "./assignments/lab assignment /index.html", title: "Assignment 10" }
+        { img: "./images/assignment 41.png", link: "./assignments/lab assignment 41/index.html", title: "Assignment 5" },
+        { img: "./images/assignment 42.png", link: "./assignments/lab assignment 42/index.html", title: "Assignment 6" },
+        { img: "./images/assignment 13.png", link: "./assignments/lab assignment 13/index.html", title: "Assignment 7" },
+        { img: "./images/assignment 14.png", link: "./assignments/lab assignment 14/index.html", title: "Assignment 8" },
+        { img: "./images/assignment 16.png", link: "./assignments/lab assignment 16/index.html", title: "Assignment 9" },
+        { img: "./images/assignment 22.png", link: "./assignments/lab assignment 22/index.html", title: "Assignment 10" }
     ];
 
     // 1. Dynamically create the HTML for the original 10 cards
