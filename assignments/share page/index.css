@@ -1,0 +1,23 @@
+body {
+    background-color: #f8f9fa;
+}
+.share-card {
+    max-width: 400px;
+    border-radius: 16px;
+}
+.social-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: transform 0.2s;
+}
+.social-btn:hover {
+    transform: scale(1.1);
+}
+.btn-whatsapp { background-color: #25D366; color: white; }
+.btn-twitter { background-color: #1DA1F2; color: white; }
+.btn-linkedin { background-color: #0077B5; color: white; }
