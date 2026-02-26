@@ -19,7 +19,7 @@ body {
     margin: 0;
     padding: 0;
     /* Adjusted from 4s to 40s for usability */
-    animation: scroll 30s linear infinite;
+    animation: scroll 310s linear infinite;
 }
 
 .scroller:hover .scroller-inner {
