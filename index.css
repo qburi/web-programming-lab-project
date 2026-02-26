@@ -5,19 +5,46 @@ body {
 
 .scroller {
     max-width: 100%;
-    overflow: hidden; /* Hides the scrollbar */
-    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); /* Fades the edges beautifully */
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    padding-block: 2rem;
 }
 
 .scroller-inner {
     display: flex;
-    gap: 1rem;
+    flex-wrap: nowrap; /* FORCES single line even if container shrinks */
+    gap: 1.5rem;
     width: max-content;
-    animation: scroll 20s linear infinite; /* The magic */
+    margin: 0;
+    padding: 0;
+    /* Adjusted from 4s to 40s for usability */
+    animation: scroll 10s linear infinite;
+}
+
+.scroller:hover .scroller-inner {
+    animation-play-state: paused;
 }
 
 @keyframes scroll {
     to {
-        transform: translate(calc(-50% - 0.5rem)); /* Moves it exactly half way, then seamlessly restarts */
+        transform: translate(calc(-50% - 0.75rem));
     }
+}
+
+.scroller-card {
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.scroller-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+.scroller-card img {
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #444;
 }
