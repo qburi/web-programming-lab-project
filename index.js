@@ -14,11 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
         { img: "./images/assignment 22.png", link: "./assignments/lab assignment 22/index.html", title: "Assignment 10" }
     ];
 
-    // 1. Dynamically create the HTML for the original 10 cards
     assignments.forEach((assign) => {
         const li = document.createElement("li");
 
-        // Utilizing Bootstrap classes for consistent styling
         li.innerHTML = `
             <a href="${assign.link}" class="card text-decoration-none text-white bg-dark border-secondary scroller-card">
                 <img src="${assign.img}" class="card-img-top" alt="${assign.title}">
@@ -30,11 +28,10 @@ document.addEventListener("DOMContentLoaded", () => {
         track.appendChild(li);
     });
 
-    // 2. Force clone the entire set of 10 cards for the infinite loop
     const scrollerContent = Array.from(track.children);
     scrollerContent.forEach((item) => {
         const duplicate = item.cloneNode(true);
-        duplicate.setAttribute("aria-hidden", "true"); // Hides from screen readers
+        duplicate.setAttribute("aria-hidden", "true");
         track.appendChild(duplicate);
     });
 });
